@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quotes Example</title>
+</head>
+<body>
+  <h1>Quotes</h1>
+
+  <blockquote>
+    This is a long quotation using the blockquote element. It may span multiple sentences and even paragraphs. It includes an entity: &amp; to show an ampersand in the quote.
+  </blockquote>
+
+  <p>Here is a short quote inside a paragraph using <q>local wisdom</q> to demonstrate short quotation usage.</p>
+</body>
+</html>

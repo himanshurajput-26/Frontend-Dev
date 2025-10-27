@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frameset Navigation Layout</title>
+</head>
+<!-- frameset is used (deprecated in HTML5) because the assignment specifically asks for it -->
+<frameset rows="80,*" border="1">
+  <!-- Top frame: navigation -->
+  <frame srcdoc='
+    <!DOCTYPE html>
+    <html lang="en">
+    <head><meta charset="UTF-8"><title>Nav</title></head>
+    <body>
+      <h3>Navigation</h3>
+      <a href="home.html" target="_top">Home</a> |
+      <a href="about.html" target="_top">About</a> |
+      <a href="contact.html" target="_top">Contact</a>
+    </body>
+    </html>' name="nav">
+  <!-- Bottom frame: welcome message -->
+  <frame srcdoc='
+    <!DOCTYPE html>
+    <html lang="en">
+    <head><meta charset="UTF-8"><title>Welcome</title></head>
+    <body><h1>Welcome to My Website</h1></body>
+    </html>' name="content">
+</frameset>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dropdown Selection</title>
+  <!-- Assignment 10: multiple selects with pre-selected options and a summary paragraph -->
+</head>
+<body>
+  <h1>Choose Your Preferences</h1>
+
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="india" selected>India</option>
+    <option value="usa">United States</option>
+    <option value="uk">United Kingdom</option>
+  </select>
+  <br><br>
+
+  <label for="state">State:</label>
+  <select id="state" name="state">
+    <option value="up">Uttar Pradesh</option>
+    <option value="mh" selected>Maharashtra</option>
+    <option value="ka">Karnataka</option>
+  </select>
+  <br><br>
+
+  <label for="city">City:</label>
+  <select id="city" name="city">
+    <option value="mumbai" selected>Mumbai</option>
+    <option value="pune">Pune</option>
+    <option value="nagpur">Nagpur</option>
+  </select>
+  <br><br>
+
+  <label for="place">Favorite Tourist Place:</label>
+  <select id="place" name="place">
+    <option value="gateway" selected>Gateway of India</option>
+    <option value="elephanta">Elephanta Caves</option>
+    <option value="marine">Marine Drive</option>
+  </select>
+
+  <p>Selected: Country — India; State — Maharashtra; City — Mumbai; Favorite Place — Gateway of India.</p>
+</body>
+</html>

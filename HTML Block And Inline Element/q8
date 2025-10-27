@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Student Report</title>
+  <!-- Assignment 8: marks table for 5 subjects with total and percentage row -->
+</head>
+<body>
+  <h1>Sunrise High School</h1>
+
+  <table border="1" cellpadding="6" cellspacing="0" title="Marks obtained in 5 subjects">
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Max Marks</th>
+        <th>Marks Obtained</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Mathematics</td><td>100</td><td>85</td></tr>
+      <tr><td>Physics</td><td>100</td><td>78</td></tr>
+      <tr><td>Chemistry</td><td>100</td><td>82</td></tr>
+      <tr><td>English</td><td>100</td><td>88</td></tr>
+      <tr><td>Computer Science</td><td>100</td><td>90</td></tr>
+      <tr>
+        <td colspan="2"><strong>Total</strong></td>
+        <td><strong>423 / 500</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Percentage</strong></td>
+        <td><strong>84.6%</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <p title="Report generated for the academic year 2024-25">Generated: Academic Year 2024-25</p>
+  </footer>
+</body>
+</html>

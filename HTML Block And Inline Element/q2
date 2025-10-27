@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product Catalog</title>
+  <!-- Assignment 2: product table with images and use of colspan/rowspan -->
+</head>
+<body>
+  <header>
+    <h1>Store Product Catalog</h1>
+  </header>
+
+  <main>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <caption>Products Available</caption>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="https://via.placeholder.com/100" alt="Product 1 image">
+            <br>Wireless Headphones
+          </td>
+          <td>Bluetooth 5.0, noise cancelling</td>
+          <td>₹2,499</td>
+          <td>In stock</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">
+            <img src="https://via.placeholder.com/100" alt="Product 2 image">
+            <br>Smartwatch Pro
+          </td>
+          <td>Heart rate monitor, AMOLED display</td>
+          <td>₹4,999</td>
+          <td>Pre-order</td>
+        </tr>
+
+        <tr>
+          <!-- same product uses rowspan above; additional description cell spans -->
+          <td colspan="2">Includes charger and 1 year warranty</td>
+          <td>Ships soon</td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="https://via.placeholder.com/100" alt="Product 3 image">
+            <br>Portable Speaker
+          </td>
+          <td>Waterproof, 10-hour battery</td>
+          <td>₹1,299</td>
+          <td>In stock</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Contact: support@store.example</p>
+  </footer>
+</body>
+</html>

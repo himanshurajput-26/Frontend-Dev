@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <!-- Assignment 15: portfolio layout page -->
+</head>
+<body>
+  <header>
+    <h1>Alex Smith</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I build clean and accessible websites that solve user problems.</p>
+      <blockquote>“Keep learning and shipping.”</blockquote>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (Basics)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ol>
+        <li>Personal Portfolio</li>
+        <li>Task Manager App</li>
+      </ol>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Contact</h3>
+    <p>Email: alex.smith@example.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+    <p><a href="https://linkedin.example.com/alex">LinkedIn</a></p>
+  </aside>
+
+  <footer>
+    <p>© 2025 Alex Smith</p>
+  </footer>
+</body>
+</html>

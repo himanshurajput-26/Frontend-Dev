@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Company Layout</title>
+  <!-- Assignment 4: company layout using block-level elements -->
+</head>
+<body>
+  <header>
+    <h1>Acme Solutions</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About the Company</h2>
+      <p>Acme Solutions provides enterprise web applications and consulting services.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services Offered</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Cloud Consulting</li>
+        <li>Data Analytics</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside>
+    <blockquote>
+      "Our mission is to empower businesses through technology."
+      <footer>— CEO, Acme Solutions</footer>
+    </blockquote>
+  </aside>
+
+  <footer id="contact">
+    <p>Email: contact@acmesolutions.com</p>
+    <p>Address: 123 Business Park, City</p>
+  </footer>
+</body>
+</html>

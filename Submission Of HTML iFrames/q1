@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Embed YouTube Video (Responsive %)</title>
+</head>
+<body>
+  <!-- Use percentage width/height so iframe scales with browser size -->
+  <h1>Responsive YouTube Video</h1>
+  <iframe
+    title="YouTube Video"
+    width="80%"
+    height="45%"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    allowfullscreen>
+  </iframe>
+  <!-- Note: height as percentage will be relative to the iframe's containing block; adjust container if needed -->
+</body>
+</html>

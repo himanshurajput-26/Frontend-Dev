@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Embed Google Map</title>
+</head>
+<body>
+  <h1>My City Map</h1>
+  <!-- loading="lazy" defers loading the iframe until it's near the viewport to improve performance -->
+  <iframe
+    title="Map showing my city"
+    width="100%"
+    height="450"
+    loading="lazy"
+    src="https://www.google.com/maps?q=New+Delhi,+India&output=embed">
+  </iframe>
+  <!-- Replace the q= parameter value with your school or city name as required. -->
+</body>
+</html>

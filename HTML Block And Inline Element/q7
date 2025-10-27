@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Conference Schedule</title>
+  <!-- Assignment 7: schedule using table with thead, tbody, tfoot -->
+</head>
+<body>
+  <header>
+    <h1>Tech Conference 2025</h1>
+  </header>
+
+  <main>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Session</th>
+          <th>Time</th>
+          <th>Topic</th>
+          <th>Speaker</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Morning</td>
+          <td>09:00 - 11:00</td>
+          <td>Keynote: Future of AI</td>
+          <td>Dr. A. Kumar</td>
+        </tr>
+        <tr>
+          <td>Afternoon</td>
+          <td>13:00 - 15:00</td>
+          <td>Cloud-native Applications</td>
+          <td>Ms. R. Singh</td>
+        </tr>
+        <tr>
+          <td>Evening</td>
+          <td>16:00 - 18:00</td>
+          <td>Security in Web Apps</td>
+          <td>Mr. S. Iyer</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Conference Venue: Convention Center Hall A</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <footer>
+    <p>For registration details contact events@conference.example</p>
+  </footer>
+</body>
+</html>

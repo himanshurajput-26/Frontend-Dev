@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Footer - Q19</title>
+</head>
+<body>
+  <!-- Q19: Footer with copyright -->
+  <footer>
+    <p>© 2025 Student Name</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Inline Code - Q10</title>
+</head>
+<body>
+  <!-- Q10: Display inline code showing how to print Hello World in JavaScript -->
+  <p>To print "Hello World" in JavaScript use <code>console.log('Hello World');</code>.</p>
+</body>
+</html>

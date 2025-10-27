@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Span Elements - Q11</title>
+</head>
+<body>
+  <!-- Q11: Paragraph containing three span elements -->
+  <p>
+    <span>Label: Name</span> — 
+    <span>Label: Course</span> — 
+    <span>Label: Year</span>
+  </p>
+</body>
+</html>

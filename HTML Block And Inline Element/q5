@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>University Hierarchy</title>
+  <!-- Assignment 5: nested list structure (University > Departments > Courses > Topics) -->
+</head>
+<body>
+  <h1>University Structure</h1>
+
+  <ul>
+    <li>Global Technical University
+      <ol>
+        <li>Computer Science Department
+          <ul>
+            <li>B.Tech
+              <ol>
+                <li>Data Structures</li>
+                <li>Operating Systems</li>
+                <li>Database Systems</li>
+              </ol>
+            </li>
+            <li>M.Tech
+              <ol>
+                <li>Advanced Algorithms</li>
+                <li>Machine Learning</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+
+        <li>Mechanical Engineering Department
+          <ul>
+            <li>B.Tech
+              <ol>
+                <li>Thermodynamics</li>
+                <li>Machine Design</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+
+        <li>Business Studies Department
+          <ul>
+            <li>BBA
+              <ol>
+                <li>Marketing</li>
+                <li>Finance</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+  </ul>
+</body>
+</html>

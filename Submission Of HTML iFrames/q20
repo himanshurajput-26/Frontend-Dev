@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Example page showing important head elements">
+  <meta name="author" content="Student">
+  <base href="https://example.com/">
+  <link rel="icon" href="favicon.ico">
+  <title>All Important Head Elements</title>
+
+  <!-- style and script can be empty as requested -->
+  <style>
+    /* Empty style block - placeholder for future CSS */
+  </style>
+
+  <script>
+    // Empty script block - placeholder for future JavaScript
+  </script>
+
+  <!-- Comments: 
+       <title> sets the page title shown in browser/tab.
+       <meta charset> defines character encoding.
+       <meta name="description"> provides a short description for search engines.
+       <meta name="author"> indicates the page author.
+       <base> sets the base URL for relative links on the page.
+       <link> can reference external resources (favicon, stylesheets).
+       <style> contains internal CSS.
+       <script> contains JS.
+  -->
+</head>
+<body>
+  <h1>Head Elements Demonstration</h1>
+  <p>This page includes title, meta tags, base, link, style, and script elements with comments explaining their purpose.</p>
+</body>
+</html>

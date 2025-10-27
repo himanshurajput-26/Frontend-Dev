@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Student">
+  <title>UTF-8 Verification</title>
+</head>
+<body>
+  <h1>UTF-8 Encoding Test</h1>
+  <p>English: Hello, this is an English sentence.</p>
+  <p>Hindi: नमस्ते, यह एक हिन्दी वाक्य है।</p>
+  <p>Japanese: こんにちは、これは日本語の文です。</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Blog</title>
+  <!-- Assignment 13: blog layout with two articles -->
+</head>
+<body>
+  <header>
+    <h1>My Personal Blog</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Blogs</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>My First Blog</h2>
+      <time datetime="2025-09-01">September 1, 2025</time>
+      <p>This is my first blog post where I introduce myself and goals.</p>
+      <blockquote>Writing regularly helps clarify thoughts.</blockquote>
+    </article>
+
+    <article>
+      <h2>Things I Learned This Week</h2>
+      <time datetime="2025-10-10">October 10, 2025</time>
+      <p>A summary of technical and personal lessons learned this week.</p>
+      <blockquote>Small experiments beat large plans that never start.</blockquote>
+    </article>
+  </main>
+
+  <footer>
+    <p>Written by [Your Name]</p>
+  </footer>
+</body>
+</html>

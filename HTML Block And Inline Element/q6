@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant Menu</title>
+  <!-- Assignment 6: menu with header, nav categories, tables per category -->
+</head>
+<body>
+  <header>
+    <h1>The Spice Corner</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#starters">Starters</a></li>
+      <li><a href="#main">Main Course</a></li>
+      <li><a href="#desserts">Desserts</a></li>
+    </ul>
+  </nav>
+
+  <section id="starters">
+    <h2>Starters</h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr><th>Dish Name</th><th>Description</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Paneer Tikka</td><td>Marinated cottage cheese grilled</td><td>₹220</td></tr>
+        <tr><td>Veg Spring Roll</td><td>Crispy rolls with veg filling</td><td>₹150</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="main">
+    <h2>Main Course</h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr><th>Dish Name</th><th>Description</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Butter Chicken</td><td>Classic creamy chicken curry</td><td>₹320</td></tr>
+        <tr><td>Paneer Butter Masala</td><td>Paneer in rich tomato gravy</td><td>₹280</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="desserts">
+    <h2>Desserts</h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr><th>Dish Name</th><th>Description</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Gulab Jamun</td><td>Soft syrupy dumplings</td><td>₹90</td></tr>
+        <tr><td>Ice Cream Sundae</td><td>Vanilla with toppings</td><td>₹120</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>Contact: reservations@spicecorner.example | Phone: +91-XXXXXXXXXX</p>
+  </footer>
+</body>
+</html>
