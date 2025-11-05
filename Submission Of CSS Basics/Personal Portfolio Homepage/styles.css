@@ -1,0 +1,39 @@
+/* q1/styles.css */
+:root{
+--bg:#0f1724;
+--card:#0b1220;
+--accent:#6ee7b7;
+--text:#e6eef8;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;color:var(--text);background:linear-gradient(180deg,var(--bg),#071020);}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+
+
+/* fixed header (requirement) */
+.site-header{position:fixed;top:0;left:0;right:0;background:rgba(5,10,15,0.85);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);}
+.header-inner{display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem}
+.site-name{font-size:1.25rem;margin:0}
+.main-nav a{color:var(--text);text-decoration:none;margin-left:1rem;font-size:0.95rem}
+
+
+/* main hero using different units: px, em, %, vh, rem */
+.main-content{padding-top:5rem /* allow for fixed header */}
+.hero{display:flex;gap:2rem;align-items:center;padding:4vh 1rem}
+.profile-img{width:180px /* px */;height:180px;border-radius:50%;object-fit:cover;border:4px solid var(--accent)}
+.bio{max-width:60%}
+.bio h2{font-size:2rem /* rem default */;margin:0 0 0.5rem}
+.bio p{font-size:1rem;line-height:1.6}
+
+
+/* footer sticks to bottom using flexbox layout of body */
+.site-footer{margin-top:auto;padding:1rem;background:#07121a;text-align:center;position:relative}
+
+
+/* responsive */
+@media (max-width:700px){
+.hero{flex-direction:column;text-align:center}
+.bio{max-width:100%}
+.main-nav a{margin-left:0.6rem}
+}

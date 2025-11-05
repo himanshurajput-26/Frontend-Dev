@@ -1,0 +1,11 @@
+/* q8/styles.css */
+body{font-family:Arial;margin:0;}
+.topbar{position:fixed;top:0;left:0;right:0;background:#042a3a;color:#fff;padding:1rem;font-size:1.2rem;}
+.layout{display:flex;margin-top:56px;min-height:calc(100vh - 56px);}
+.sidebar{width:220px;background:#06364a;color:#fff;padding:1rem;}
+.sidebar nav{display:flex;flex-direction:column;gap:.5rem;}
+.sidebar a{color:#fff;text-decoration:none;}
+.main-content{flex:1;padding:1rem;background:#f5f7fa;}
+.cards{display:flex;gap:1rem;}
+.card{flex:1;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+@media(max-width:800px){.layout{flex-direction:column;}.sidebar{width:100%;}}

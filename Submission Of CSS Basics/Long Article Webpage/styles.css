@@ -1,0 +1,18 @@
+/* q4/styles.css */
+*{box-sizing:border-box}
+body{font-family:Georgia,serif;background:#fafafa;color:#111;padding:2rem}
+.container{max-width:800px;margin:0 auto}
+h1{font-size:2.25rem;margin-bottom:0.25rem}
+.meta{color:#666;margin-bottom:1.25rem;font-style:italic}
+.content p{margin:1rem 0;text-align:justify}
+
+
+/* ::first-letter and ::first-line */
+.content p::first-letter{font-size:2.2rem;font-weight:700;margin-right:6px;float:left}
+.content p::first-line{font-weight:700}
+
+
+mark{background:#fffbcc;padding:0 .2rem;border-radius:2px}
+
+
+blockquote{border-left:4px solid #c8d6e5;background:#f2f6fb;padding:1rem;margin:1.5rem 0}

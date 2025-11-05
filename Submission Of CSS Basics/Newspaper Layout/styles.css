@@ -1,0 +1,7 @@
+/* q9/styles.css */
+body{font-family:Georgia,serif;background:#f0ede7;padding:2rem;}
+.newspaper{max-width:900px;margin:auto;background:#fff;padding:2rem;border-radius:8px;}
+.content{column-count:3;column-gap:1.5rem;text-align:justify;}
+.float-left{float:left;margin:0 1rem 1rem 0;width:150px;}
+@media(max-width:900px){.content{column-count:2;}}
+@media(max-width:600px){.content{column-count:1;}}

@@ -1,0 +1,18 @@
+/* q3/styles.css */
+*{box-sizing:border-box}
+body{font-family:Arial;margin:0;padding:2rem;background:#f5f7fb}
+.container{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:#fff;padding:1rem;border:1px solid #e1e7ef;border-radius:10px;box-shadow:0 6px 18px rgba(12,24,48,0.06)}
+.card img{width:100%;border-radius:8px}
+.card h3{margin:0.5rem 0}
+.role{font-weight:600;color:#65737e}
+
+
+/* highlight team lead */
+.highlight{background:#fffbe6;border:2px solid #ffd27a}
+
+
+/* responsive single column under 600px */
+@media (max-width:600px){
+.container{grid-template-columns:1fr}
+}
