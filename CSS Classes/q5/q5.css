@@ -1,0 +1,32 @@
+/* q5.css — button variants with transitions and pseudo-classes */
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family: system-ui, Arial, sans-serif; background:#fafafa; color:#0b1220; padding:1rem; }
+header { text-align:center; padding:1rem; background:#fff; border-bottom:1px solid #e6e9ef; }
+
+.btn-wrap { display:flex; gap:1rem; align-items:center; justify-content:center; margin-top:1rem; flex-wrap:wrap; }
+.btn { padding:0.6rem 1rem; border-radius:8px; border:none; cursor:pointer; font-weight:600; transition: transform .14s ease, box-shadow .14s ease, background .14s ease; box-shadow:0 6px 18px rgba(2,6,23,0.06); }
+
+/* Primary */
+.btn.primary { background:#0ea5a2; color:#fff; }
+.btn.primary:hover { transform:translateY(-3px); box-shadow:0 14px 30px rgba(14,165,162,0.12); }
+.btn.primary:active { transform:translateY(0); }
+
+/* Secondary */
+.btn.secondary { background:#f59e0b; color:#0b1220; }
+.btn.secondary:hover { transform:translateY(-3px); }
+
+/* Outline */
+.btn.outline { background:transparent; border:2px solid #0f172a; color:#0f172a; }
+.btn.outline:hover { background:#0f172a; color:#fff; transform:translateY(-3px); }
+
+/* Disabled */
+.btn.disabled { background:#e6e9ef; color:#94a3b8; cursor:not-allowed; box-shadow:none; }
+.btn.disabled:focus { outline:none; }
+
+/* :focus demonstration */
+.btn:focus { outline:3px solid rgba(59,130,246,0.18); outline-offset:4px; }
+
+/* Small screens */
+@media (max-width:480px) {
+  .btn-wrap { flex-direction:column; gap:0.6rem; }
+}

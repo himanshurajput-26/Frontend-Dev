@@ -1,0 +1,24 @@
+/* q8.css — side-by-side comparison */
+* { box-sizing: border-box; } /* global helpful reset, but we'll override left example to content-box */
+body { font-family: system-ui, Arial, sans-serif; background:#fbfdff; color:#0b1220; margin:0; }
+header { text-align:center; padding:1rem; background:#fff; border-bottom:1px solid #e6e9ef; }
+main { display:flex; gap:1.25rem; max-width:1100px; margin:1.25rem auto; padding:1rem; align-items:flex-start; }
+
+/* Comparison layout */
+.compare { display:flex; gap:1rem; flex:1 1 600px; align-items:flex-start; }
+.box { background:#fff; padding:1rem; border-radius:10px; box-shadow:0 8px 20px rgba(2,6,23,0.06); width:320px; }
+
+/* Left example uses content-box explicitly to show difference */
+.example-content .inner { box-sizing: content-box; width:250px; padding:30px; border:8px solid #0f172a; background:#e6f2ff; margin-top:0.5rem; }
+
+/* Right uses border-box to include padding and border */
+.example-border .inner { box-sizing: border-box; width:250px; padding:30px; border:8px solid #0f172a; background:#fef3f2; margin-top:0.5rem; }
+
+/* Explanatory aside */
+.explain { max-width:360px; background:#fff; padding:1rem; border-radius:10px; box-shadow:0 8px 20px rgba(2,6,23,0.04); }
+
+/* Responsive stacking */
+@media (max-width:900px) {
+  main { flex-direction:column; }
+  .compare { width:100%; justify-content:center; }
+}

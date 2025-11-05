@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q8 - Box-sizing Comparison</title>
+  <link rel="stylesheet" href="q8.css" />
+</head>
+<body>
+  <header><h1>Box-sizing: content-box vs border-box</h1></header>
+
+  <main class="center">
+    <section class="compare">
+      <article class="box example-content">
+        <h2>Default (content-box)</h2>
+        <div class="inner">Declared width: 250px; padding: 30px; border: 8px solid #0f172a</div>
+      </article>
+
+      <article class="box example-border">
+        <h2>border-box</h2>
+        <div class="inner">Declared width: 250px; padding: 30px; border: 8px solid #0f172a</div>
+      </article>
+    </section>
+
+    <aside class="explain">
+      <p>The left box uses the default <code>box-sizing: content-box</code>. Padding and border are added to the declared width.</p>
+      <p>The right box uses <code>box-sizing: border-box</code>. Padding and border are included within the declared width.</p>
+    </aside>
+  </main>
+
+  <footer><p>Q8 — box-sizing comparison</p></footer>
+</body>
+</html>

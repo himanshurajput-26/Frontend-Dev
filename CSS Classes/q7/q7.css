@@ -1,0 +1,32 @@
+/* q7.css — small UI card with search, buttons, dropdown */
+/* Accessibility helper */
+.visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
+
+/* Base */
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family: system-ui, Arial, sans-serif; background:linear-gradient(180deg,#f8fafc,#ffffff); color:#0b1220; min-height:100vh; }
+header { text-align:center; padding:1rem; }
+main { display:flex; align-items:center; justify-content:center; padding:2rem; }
+
+/* Card */
+.card { background:#fff; width:100%; max-width:720px; padding:1.25rem; border-radius:14px; box-shadow:0 12px 30px rgba(2,6,23,0.06); }
+.controls { display:flex; gap:1rem; align-items:center; flex-wrap:wrap; }
+
+/* Search field */
+.search input[type="search"] { padding:0.6rem 0.8rem; border-radius:8px; border:1px solid #cbd5e1; min-width:220px; }
+.search input:focus { outline:3px solid rgba(59,130,246,0.14); outline-offset:3px; }
+
+/* Buttons and select */
+.actions { display:flex; gap:0.6rem; align-items:center; }
+.btn { padding:0.5rem 0.9rem; border-radius:8px; border:none; cursor:pointer; font-weight:600; background:#0ea5a2; color:#fff; box-shadow:0 8px 18px rgba(14,165,162,0.08); transition:transform .14s ease; }
+.btn:focus { outline:3px solid rgba(59,130,246,0.14); outline-offset:4px; }
+.btn.outline { background:transparent; color:#0b1220; border:1px solid #cbd5e1; box-shadow:none; }
+select { padding:0.5rem; border-radius:8px; border:1px solid #cbd5e1; }
+
+/* Card background gradient and spacing done above */
+
+/* Responsive */
+@media (max-width:600px) {
+  .controls { flex-direction:column; align-items:stretch; }
+  .actions { justify-content:space-between; }
+}

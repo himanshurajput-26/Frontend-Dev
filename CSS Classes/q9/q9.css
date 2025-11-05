@@ -1,0 +1,38 @@
+/* q9.css — buttons and elements combining pseudo-classes, transitions, transforms */
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family: system-ui, Arial, sans-serif; background:#f8fafc; color:#0b1220; min-height:100vh; }
+header { text-align:center; padding:1rem; }
+main { display:flex; justify-content:center; align-items:center; padding:2rem; }
+
+/* Arrange examples */
+.examples { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; max-width:900px; }
+
+/* Shared example styles */
+.example { display:inline-flex; align-items:center; justify-content:center; padding:0.6rem 1rem; border-radius:10px; transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease; cursor:pointer; }
+
+/* Button */
+.btn { background:#0ea5a2; color:#fff; border:none; box-shadow:0 8px 18px rgba(14,165,162,0.08); }
+.btn:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 18px 40px rgba(14,165,162,0.16); }
+
+/* Link */
+.link { background:#fff; border:1px solid #cbd5e1; color:#0f172a; text-decoration:none; }
+.link:hover, .link:focus { background:#0f172a; color:#fff; transform:translateY(-6px); box-shadow:0 18px 40px rgba(2,6,23,0.08); outline:3px solid rgba(99,102,241,0.12); }
+
+/* Box: combines hover transform and a pseudo-class effect (focus-within demonstrates keyboard) */
+.box { width:140px; height:80px; background:linear-gradient(135deg,#fff7ed,#fde68a); border-radius:8px; }
+.box:hover { transform:rotate(-2deg) translateY(-6px); box-shadow:0 14px 36px rgba(253,190,89,0.12); }
+
+/* Grow: scale + color change with transition */
+.grow { background:#111827; color:#fff; }
+.grow:hover { transform:scale(1.08) translateY(-6px); background:#0ea5a2; }
+
+/* Active states */
+.example:active { transform:translateY(-2px) scale(.99); }
+
+/* Focus states for accessibility */
+.example:focus { outline:3px solid rgba(59,130,246,0.18); outline-offset:6px; }
+
+/* Responsive */
+@media (max-width:520px) {
+  .examples { flex-direction:column; gap:0.75rem; align-items:center; padding:0 1rem; }
+}

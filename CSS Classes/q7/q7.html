@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q7 - UI Components</title>
+  <link rel="stylesheet" href="q7.css" />
+</head>
+<body>
+  <header><h1>UI Components Card</h1></header>
+
+  <main>
+    <section class="card" aria-labelledby="card-title">
+      <h2 id="card-title">Search & Controls</h2>
+
+      <form class="controls" role="search" aria-label="search form">
+        <label class="search">
+          <span class="visually-hidden">Search</span>
+          <input type="search" placeholder="Search..." aria-label="search input">
+        </label>
+
+        <div class="actions">
+          <button class="btn primary">Search</button>
+          <button class="btn outline" type="button">Reset</button>
+          <select name="options" aria-label="select">
+            <option value="all">All</option>
+            <option value="articles">Articles</option>
+            <option value="images">Images</option>
+          </select>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Q7 — UI components</p></footer>
+</body>
+</html>

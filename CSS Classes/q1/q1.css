@@ -1,0 +1,39 @@
+/* q1.css — Pseudo-classes demo */
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height:100%; font-family: system-ui, Arial, sans-serif; background:#f7fafc; color:#0f172a; }
+
+/* Page layout */
+header, footer { text-align:center; padding:1rem; background:#ffffff; border-bottom:1px solid #e6e9ef; }
+header h1 { font-size:1.25rem; }
+main { padding:1.25rem; max-width:1100px; margin:0 auto; }
+
+/* Row of cards using Flexbox */
+.demo-row { display:flex; gap:1rem; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+.card { background:#fff; padding:1rem; border-radius:10px; box-shadow:0 6px 18px rgba(2,6,23,0.06); flex:1 1 300px; }
+
+/* Links */
+.link-list { display:flex; flex-direction:column; gap:0.5rem; margin-top:0.5rem; }
+.demo-link { display:inline-block; padding:0.5rem 0.8rem; text-decoration:none; border-radius:6px; color:#065f46; border:1px solid transparent; transition:all .18s ease; background:linear-gradient(180deg,#ecfeff,#f0fdfa); }
+.demo-link:hover { background:#c7f9ec; transform:translateY(-2px); box-shadow:0 6px 12px rgba(6,95,70,0.08); }
+.demo-link:active { transform:translateY(0); box-shadow:none; opacity:.95; }
+
+/* Buttons with focus & active */
+.btn-row { display:flex; gap:0.6rem; margin-top:0.5rem; flex-wrap:wrap; }
+.btn { padding:0.5rem 0.9rem; border-radius:8px; border:1px solid rgba(2,6,23,0.06); cursor:pointer; transition:transform .15s ease, box-shadow .15s ease; background:#e6eef7; }
+.btn:active { transform:translateY(1px); }
+.btn:focus { outline:3px solid rgba(59,130,246,0.25); outline-offset:3px; box-shadow:0 6px 16px rgba(59,130,246,0.12); }
+.btn.primary { background:#0ea5a2; color:#fff; border:none; }
+.btn.secondary { background:#fbbf24; color:#0b1220; border:none; }
+.btn.ghost { background:transparent; border:1px dashed #334155; }
+
+/* List with nth-child */
+.demo-list { list-style:none; padding-top:0.5rem; }
+.demo-list li { padding:0.6rem; border-radius:6px; margin-bottom:0.4rem; }
+.demo-list li:nth-child(odd) { background:#eef2ff; }
+.demo-list li:nth-child(even) { background:#f8fafc; }
+
+/* Responsive adjustments */
+@media (max-width:860px) {
+  .demo-row { flex-direction:column; }
+}

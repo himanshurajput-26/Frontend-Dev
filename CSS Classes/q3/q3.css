@@ -1,0 +1,40 @@
+/* q3.css — Image showcase with Grid + hover effects */
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family: system-ui, Arial, sans-serif; background:#fafafa; color:#0f172a; }
+header { text-align:center; padding:1rem; background:#fff; border-bottom:1px solid #e6e9ef; }
+
+/* Responsive grid — 3 columns desktop, 2 tablet, 1 mobile */
+.gallery {
+  display:grid;
+  gap:1rem;
+  max-width:1100px;
+  margin:1.25rem auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding:0 1rem;
+}
+
+.figure { position:relative; overflow:hidden; border-radius:12px; box-shadow:0 8px 30px rgba(2,6,23,0.06); background:#fff; }
+.figure img { display:block; width:100%; height:220px; object-fit:cover; transition:transform .3s ease; border-radius:inherit; }
+.figure::after {
+  /* overlay */
+  content:"";
+  position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%); opacity:0; transition:opacity .28s ease;
+  border-radius:inherit;
+}
+.figure:hover img { transform:scale(1.08); }
+.figure:hover::after { opacity:1; }
+.figure figcaption { padding:0.75rem 1rem; color:#fff; position:absolute; bottom:0; left:0; font-weight:600; }
+
+/* Accessibility: make figures focusable for keyboard */
+.figure { outline: none; }
+.figure:focus-within img { transform:scale(1.08); }
+
+/* Breakpoints */
+@media (max-width:900px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .figure img { height:200px; }
+}
+@media (max-width:700px) {
+  .gallery { grid-template-columns: 1fr; }
+  .figure img { height:280px; }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q10 - Mini UI Layout</title>
+  <link rel="stylesheet" href="q10.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">My App</h1>
+      <nav class="top-nav" aria-label="top navigation">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Profile</a>
+        <a href="#" class="nav-item">Settings</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="center">
+    <section class="card ui-card" aria-labelledby="card-hdr">
+      <h2 id="card-hdr">Contact Form</h2>
+
+      <form class="ui-form" action="#" novalidate>
+        <label class="field">
+          <span class="label">Name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label class="field">
+          <span class="label">Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label class="field">
+          <span class="label">Message</span>
+          <textarea name="message" rows="5" placeholder="Write a short message..."></textarea>
+        </label>
+
+        <div class="controls">
+          <button type="submit" class="btn primary">Send</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+      </form>
+
+      <figure class="small-image" aria-hidden="true">
+        <!-- decorative inline SVG; no external resources required -->
+        <svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="decorative image">
+          <rect rx="10" ry="10" width="120" height="80" fill="#e6f6ff"/>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#0f172a" font-family="Arial" font-size="12">Image</text>
+        </svg>
+        <figcaption class="visually-hidden">Decorative image</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 — Mini UI Layout</p>
+    </div>
+  </footer>
+</body>
+</html>

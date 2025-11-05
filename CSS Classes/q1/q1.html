@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q1 - Pseudo-Classes Demo</title>
+  <link rel="stylesheet" href="q1.css" />
+</head>
+<body>
+  <header>
+    <h1>Pseudo-Classes: :hover, :focus, :active, :nth-child()</h1>
+  </header>
+
+  <main>
+    <section class="demo-row">
+      <!-- Links demonstrating :hover and :active -->
+      <article class="card">
+        <h2>Links</h2>
+        <p class="explain">:hover highlights links on pointer hover; :active shows while clicking.</p>
+        <nav class="link-list" aria-label="example links">
+          <a href="#" class="demo-link">Primary link</a>
+          <a href="#" class="demo-link">Another link</a>
+          <a href="#" class="demo-link">External link</a>
+        </nav>
+      </article>
+
+      <!-- Buttons demonstrating :focus and :active -->
+      <article class="card">
+        <h2>Buttons</h2>
+        <p class="explain">:focus visible when keyboard-focused; :active when pressed.</p>
+        <div class="btn-row">
+          <button class="btn primary">Primary</button>
+          <button class="btn secondary">Secondary</button>
+          <button class="btn ghost">Ghost</button>
+        </div>
+      </article>
+
+      <!-- List demonstrating :nth-child -->
+      <article class="card">
+        <h2>List & nth-child()</h2>
+        <p class="explain">:nth-child(odd/even) used to alternate styles for list items.</p>
+        <ul class="demo-list">
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+          <li>List item 4</li>
+          <li>List item 5</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Q1 — Pseudo-Classes example</p>
+  </footer>
+</body>
+</html>
