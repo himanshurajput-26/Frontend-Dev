@@ -1,0 +1,13 @@
+/* q3.css */
+*{box-sizing:border-box;margin:0}
+body{font-family:system-ui,Arial;color:#fff}
+.fixed-header,.fixed-footer{position:fixed;left:0;right:0;padding:0.8rem;text-align:center;background:rgba(0,0,0,0.5);z-index:10}
+.fixed-header{top:0}
+.fixed-footer{bottom:0}
+main{padding-top:56px;padding-bottom:56px}
+section{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem}
+.linear{background:linear-gradient(135deg,#06b6d4,#3b82f6)}
+.radial{background:radial-gradient(circle at 20% 30%, #f97316 0%, #ef4444 40%, #6b21a8 100%);background-attachment:fixed}
+
+
+section p{max-width:700px}

@@ -1,0 +1,51 @@
+/* q10.css – Navigation Bar Styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  background-color: #111827;
+  padding: 12px;
+}
+
+.nav-item {
+  color: #e5e7eb;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(255,255,255,0.1);
+  transform: translateY(-4px);
+}
+
+.nav-item.active {
+  background-color: #f59e0b;
+  color: #111827;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.foot {
+  text-align: center;
+  padding: 1rem;
+  background: #f3f4f6;
+  font-weight: 500;
+}

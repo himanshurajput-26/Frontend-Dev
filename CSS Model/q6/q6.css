@@ -1,0 +1,12 @@
+/* q6.css */
+*{box-sizing:border-box}
+body{font-family:Arial;margin:2rem}
+.transform-row{display:flex;gap:1rem;align-items:center;justify-content:center}
+.tbox{display:flex;flex-direction:column;align-items:center}
+.shape{width:120px;height:120px;border-radius:12px;background:#0ea5e9;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;transition:all 0.4s ease}
+.tbox.rotate:hover .shape{transform:rotate(18deg)}
+.tbox.scale:hover .shape{transform:scale(1.15)}
+.tbox.translate:hover .shape{transform:translateY(-12px)}
+.tbox.skew:hover .shape{transform:skewX(-10deg)}
+figcaption{margin-top:8px;text-align:center}
+@media (max-width:560px){.transform-row{flex-direction:column}}

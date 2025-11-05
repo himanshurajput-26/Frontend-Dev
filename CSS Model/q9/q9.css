@@ -1,0 +1,57 @@
+/* q9.css – Demonstrate Outline and Focus */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background: #f1f5f9;
+}
+
+.form-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+/* Outline effects */
+input:focus {
+  outline: 3px solid #3b82f6;
+  outline-offset: 3px;
+}
+
+textarea:focus {
+  outline: 3px dashed #f59e0b;
+  outline-offset: 3px;
+}
+
+button {
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1e293b;
+}

@@ -1,0 +1,15 @@
+/* q2.css */
+*{box-sizing:border-box}
+body,html{height:100%;margin:0;font-family:Arial}
+.wrap{height:100vh;display:flex;align-items:center;justify-content:center;gap:1rem}
+.box{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600}
+/* Box A uses px */
+.box-a{width:200px;height:120px;background:#2563eb;padding:10px}
+/* Box B uses percent & demonstrates min-height and overflow */
+.box-b{width:50%;min-height:80px;max-width:420px;height:40vh;background:#16a34a;padding:12px;overflow:auto}
+/* Box C uses em and demonstrates max-width */
+.box-c{width:30vw;height:12em;background:#db2777;padding:16px;min-width:140px}
+
+
+/* Center everything vertically/horizontally already handled by parent Flexbox */
+@media (max-width:700px){.wrap{flex-direction:column;padding:1rem}.box-b{width:90%}}

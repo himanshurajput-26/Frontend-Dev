@@ -1,0 +1,43 @@
+/* q8.css – Demonstrate Box Model Concept */
+:root {
+  --size: 220px;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background: #f8fafc;
+  color: #111;
+}
+
+.center {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.box-demo {
+  background: #f1f5f9;
+  padding: 1rem;
+}
+
+.box-demo .content {
+  width: var(--size);
+  height: 140px;
+  background: #60a5fa;
+  padding: 24px;
+  border: 8px solid #111;
+  margin: 18px;
+  outline: 3px dashed rgba(0, 0, 0, 0.1);
+}
+
+.explain {
+  max-width: 300px;
+}
+
+/* Uncomment below to see border-box model effect */
+/* * { box-sizing: border-box; } */

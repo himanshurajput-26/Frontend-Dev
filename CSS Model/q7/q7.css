@@ -1,0 +1,66 @@
+/* q7.css – Typography and text styling example */
+
+/* Base styling */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+  margin: 2rem;
+  background-color: #fafafa;
+}
+
+.article {
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* Heading style */
+h1 {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraphs and special classes */
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  text-align: justify;
+}
+
+/* Highlighting important words */
+mark {
+  background: #fde68a;
+  color: #92400e;
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+}
+
+/* Emphasis and strong text */
+strong {
+  color: #0b5fff;
+}
+
+em {
+  color: #b91c1c;
+}
+
+/* First letter and first line pseudo-elements */
+.article p::first-letter {
+  font-size: 2.2rem;
+  font-weight: 700;
+  float: left;
+  margin-right: 6px;
+  color: #374151;
+}
+
+.article p::first-line {
+  font-variant: small-caps;
+}
