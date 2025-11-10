@@ -1,0 +1,17 @@
+/* Responsive-Dashboard-Summary.css */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:#f7f9fc;color:#111}
+.dashboard{display:grid;grid-template-areas:"header header" "sidebar content" "footer footer";grid-template-columns:240px 1fr;min-height:100vh;gap:1rem}
+.dash-header{grid-area:header;padding:1rem;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.05)}
+.sidebar{grid-area:sidebar;background:#fff;padding:1rem}
+.content{grid-area:content;padding:1rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.card{background:#fff;padding:1.2rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.05);transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:scale(1.03);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.dash-footer{grid-area:footer;text-align:center;padding:1rem;background:#fff}
+@keyframes loadIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.card{animation:loadIn .5s ease both}
+@media (max-width:750px){
+  .dashboard{grid-template-areas:"header" "sidebar" "content" "footer";grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+}

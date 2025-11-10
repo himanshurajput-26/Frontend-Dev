@@ -1,0 +1,9 @@
+/* Responsive-Design-Principles-Summary.css */
+body{font-family:system-ui;margin:0;background:#f6f8fb;color:#111}
+.principles{max-width:900px;margin:2rem auto;padding:1rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.item{background:#fff;padding:1rem;border-radius:8px;transition:background .25s ease,color .25s ease}
+.item:hover{background:linear-gradient(90deg,#0066ff,#00b4ff);color:#fff}
+@media (max-width:600px){
+  .grid{grid-template-columns:1fr}
+}
