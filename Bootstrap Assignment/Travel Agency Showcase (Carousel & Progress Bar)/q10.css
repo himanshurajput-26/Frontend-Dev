@@ -1,0 +1,3 @@
+/* q10.css */
+.carousel-inner img{object-fit:cover; height:500px}
+@media (max-width:768px){ .carousel-inner img{height:320px} }

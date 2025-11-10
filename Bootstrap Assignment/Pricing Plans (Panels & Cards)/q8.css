@@ -1,0 +1,5 @@
+/* q8.css */
+.pro-card{transform-origin:center; transition: transform .18s ease, box-shadow .18s ease}
+.pro-card:hover{transform:translateY(-8px)}
+.card{transition: transform .12s ease, box-shadow .12s ease}
+.card:hover{transform:translateY(-6px); box-shadow:0 12px 26px rgba(0,0,0,.08)}
