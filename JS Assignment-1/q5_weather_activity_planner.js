@@ -1,13 +1,8 @@
-// Q5: Weather Activity Planner
-// File: q5_weather_activity_planner.js
-
-// Example inputs (change values to test)
-const temperature = 22;     // degrees Celsius
-const isRaining = false;    // boolean
-const windSpeed = 15;       // km/h or similar unit
+const temperature = 22;     
+const isRaining = false;    
+const windSpeed = 15;       
 
 let advise;
-
 if (isRaining) {
   advise = "Stay indoors with hot coffee.";
 } else if (temperature > 35) {

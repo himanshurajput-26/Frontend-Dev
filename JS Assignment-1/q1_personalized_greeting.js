@@ -1,13 +1,6 @@
-// Q1: Personalized Login Greeting
-// File: q1_personalized_greeting.js
-
-// Change this name to test with other names
-const userName = "Himanshu";
-
-// Get current hour (0-23)
+const userName = "John";
 const currentHour = new Date().getHours();
 
-// Build greeting using template literals
 let greeting;
 if (currentHour < 12) {
   greeting = `Good Morning ${userName}!`;

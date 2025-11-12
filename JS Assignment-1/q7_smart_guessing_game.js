@@ -1,10 +1,4 @@
-// Q7: Smart Guessing Game (Number Range)
-// File: q7_smart_guessing_game.js
-
-// Generate secret number 1-50
 const secretNumber = Math.floor(Math.random() * 50) + 1;
-
-// Test user guess (change value to try)
 const userGuess = 28;
 
 if (userGuess === secretNumber) {
@@ -20,5 +14,4 @@ if (userGuess === secretNumber) {
   }
 }
 
-// For debugging, show secret (comment out in actual game)
 console.log(`(debug) secret: ${secretNumber}, guess: ${userGuess}`);
