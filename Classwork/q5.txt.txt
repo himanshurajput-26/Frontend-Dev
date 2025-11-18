@@ -1,0 +1,27 @@
+Q2. Explain these outputs
+1. console.log(5 == "5");
+
+✔ Output: true
+
+Reason:
+== (loose equality) converts types before comparison.
+So "5" becomes number → 5 == 5 → true
+
+2. console.log(5 === "5");
+
+✔ Output: false
+
+Reason:
+=== (strict equality) checks:
+
+value
+
+type
+
+Here:
+
+5 → number
+
+"5" → string
+
+Types are different → false

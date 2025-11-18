@@ -1,0 +1,21 @@
+Q1. Convert to Number, Boolean, and String
+
+Given values:
+"50", "hello", false, null, "100px"
+
+✔ Conversions Table
+Value	Number()	Boolean()	String()
+"50"	50	true	"50"
+"hello"	NaN (not a number)	true	"hello"
+false	0	false	"false"
+null	0	false	"null"
+"100px"	NaN	true	"100px"
+✔ Why?
+
+"hello" and "100px" cannot convert fully to numbers → NaN
+
+false → 0 when converted to number
+
+null → 0 when converted to number
+
+All non-empty strings → Boolean true
