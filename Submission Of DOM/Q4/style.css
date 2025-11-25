@@ -1,0 +1,5 @@
+body[data-theme="dark"]{background:#111;color:#eee}
+body[data-theme="light"]{background:#fff;color:#111}
+body[data-theme="blue"]{background:#e6f0ff;color:#022a5e}
+.card{padding:12px;border:1px solid #ccc;border-radius:8px}
+button{margin-right:6px}

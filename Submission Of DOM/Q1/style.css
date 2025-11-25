@@ -1,0 +1,6 @@
+body{font-family:system-ui,Arial;margin:20px}
+.card{max-width:600px;padding:16px;border:1px solid #ddd;border-radius:8px}
+#productList{list-style:none;padding:0;margin-top:12px}
+#productList li{display:flex;align-items:center;justify-content:space-between;padding:8px;border-bottom:1px solid #eee}
+.inline-edit{flex:1;margin-right:10px}
+button{margin-left:6px}
